@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation assignment</title>
+	<style>
+		body
+		{
+		background-image:url("football ground.jpg");
+		background-size:cover;
+		background-repeat:norepeat;
+		background-attachment:fixed;
+		}
+		#a
+		{
+		width:0px;
+		position:relative;
+		animation:anim 5s linear 0s infinite normal;
+		}
+		#b
+		{
+		width:180px;
+		height:200px;
+		position:fixed;
+		top:330px;
+		left:1100px;
+		}
+		@keyframes anim
+		{
+		0%
+		{
+		transform:perspective(200px) rotatez(0deg);
+		top:0px;
+		left:0px;
+		}
+		14.28%
+		{
+		top:400px;
+		left:182.85px;
+		}
+		28.56%
+		{
+		top:200px;
+		left:365.7px;
+		}
+		42.84%
+		{
+		top:300px;
+		left:548.55px;
+		}
+		57.12%
+		{
+		top:50px;
+		left:731.4px;
+		}
+		71.4%
+		{
+		top:400px;
+		left:914.25px;
+		}
+		85.68%
+		{
+		top:350px;
+		left:1096.81px;
+		}
+		100%
+		{
+		top:350px;
+		left:1170px;
+		}
+		#b img
+		{
+		opacity:0.2;
+		}
+		}
+	</style>
+</head>
+<body>
+	<div id="a">
+	<img src="Football.png" width="100px" height="100px">
+	</div>
+	<div id="b"><img src="goal.jpg" width="180px" height="200px"></div>
+</body>
+</html>
